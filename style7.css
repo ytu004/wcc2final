@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+	margin: 0;
+	background-image: url("./images/ru.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	padding: 0;	
+  }
+  
+  /* Card styles */
+  .card {
+	  position: absolute;
+	  bottom: 10px;
+	  margin: 0 20px;
+	  transition: all 0.3s ease-out;
+	  max-width: 20%;
+  }
+  
+  .card:hover {
+	  transform: translate(50%, -50%) scale(2);
+	  z-index: 1;
+  }
+  
+  #card16 {
+	  left: 10%;
+  }
+  
+  #card17 {
+	  left:35%;
+  }
+  
+  #card18 {
+	  left:60%;
+  }
+  
+  /* Test styles */
+  .test {
+	  position: absolute;
+	  bottom: 300px;
+	  margin: 0 20px;
+	  transition: all 0.3s ease-out;
+	  max-width: 30%;
+  }
+  
+  .test:hover {
+	  transform: translate(100%, 50%) scale(2);
+	  z-index: 1;
+  }
+  
+  #test6{
+	top:10%;
+  }
+  
+  /* Image styles */
+  img {
+	  max-width: 100%;
+	  max-height: 100%;
+	  width: auto;
+	  height: auto;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+	.card, .test {
+	  max-width: 80%;
+	}
+	
+	#card16, #card17, #card18 {
+	  left: unset;
+	  right: unset;
+	}
+	
+	#card16, #test6 {
+	  top: unset;
+	  bottom: 50%;
+	}
+	
+	#card17 {
+	  bottom: 35%;
+	}
+	
+	#card18 {
+	  bottom: 20%;
+	}
+	
+	.test {
+	  bottom: 70%;
+	}
+  }
+  
